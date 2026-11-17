@@ -40,6 +40,29 @@ app.get('/uranus', (req, res) => {
         population: 0
     })
 })
+
+app.get('/saturn', (req, res) => {
+    res.send({
+        message: 'famous for its massive, complex ring system made of ice and rock',
+        population: 0
+    })
+})
+
+app.get('/mars', (req, res) => {
+    res.send({
+        message: 'Known as the "Red Planet," it is home to Olympus Mons, the tallest volcano in the solar system.',
+        population: 1
+    })
+})
+
+app.get('/neptune', (req, res) => {
+    res.send({
+        message: 'farthest planet from the Sun',
+        population: 0
+    })
+})
+
+
 app.listen(3005, () => {
     console.log('Server is running on port 3005');
 });
