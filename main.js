@@ -31,8 +31,15 @@ app.get('/pluto', (req, res) => {
         message: 'Coldest planet in the solar system',
         population: 0
     });
+    
 });
 
+app.get('/uranus', (req, res) => {
+    res.send({
+        message: 'Another planet in the solar system', 
+        population: 0
+    })
+})
 app.listen(3005, () => {
     console.log('Server is running on port 3005');
 });
